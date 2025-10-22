@@ -59,6 +59,8 @@ Essa implementação permitirá:
 
 ---
 
+<img src="./App.jpg" alt="Descrição da imagem" width="300"/>
+
 ## Como Rodar
 1. Clonar o repositório:
 ```bash
