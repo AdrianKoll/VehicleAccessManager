@@ -64,4 +64,4 @@ Essa implementação permitirá:
 ## Como Rodar
 1. Clonar o repositório:
 ```bash
-git clone https://github.com/AdrianKoll/aplicativo_veiculos.git
+git clone https://github.com/AdrianKoll/VehicleAccessManager.git
