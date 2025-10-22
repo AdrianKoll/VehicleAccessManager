@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".ui.AddEntryActivity"
+    android:fitsSystemWindows="true">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Registrar Veículo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+    </LinearLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:background="@android:color/white">
+
+                    <!-- Motivo -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Motivo"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editTextMotivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="Selecione ou digite"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="text" />
+
+                    <!-- Nome -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nome Completo"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="Digite o nome completo"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="textPersonName" />
+
+                    <!-- CPF -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CPF"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextCPF"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="Digite o CPF"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="number" />
+
+                    <!-- Placa -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placa do Carro"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextPlaca"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="AAA-0000"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="textVisiblePassword|textCapCharacters"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:maxLength="8" />
+
+                    <!-- Modelo / Cor -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modelo / Cor"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextModeloCor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="Ex: Gol Branco"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="textCapWords" />
+
+                    <!-- Data -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextData"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="DD/MM/AAAA"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="date" />
+
+                    <!-- Hora Entrada -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horário Entrada"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextHoraEntrada"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="HH:MM"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="time" />
+
+                    <!-- Hora Saída -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horário Saída (opcional)"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextHoraSaida"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="HH:MM"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:inputType="time" />
+
+                    <!-- Observação -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Observação"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextObservacao"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/rounded_edittext_dark"
+                        android:hint="Adicione observações aqui"
+                        android:textColorHint="@color/textSecondary"
+                        android:textColor="@color/white"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine" />
+
+                    <!-- Botões -->
+                    <Button
+                        android:id="@+id/btnSalvar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Salvar"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/rounded_button_red"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <Button
+                        android:id="@+id/btnVoltar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Voltar"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:background="@drawable/rounded_button_red" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

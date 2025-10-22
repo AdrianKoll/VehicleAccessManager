@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background"
+    android:padding="32dp"
+    tools:context=".ui.WelcomeActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/hexagon_logo" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Descrição -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/welcome_description"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Nome da empresa -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/company_name"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Slogan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/company_slogan"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <!-- Botão Sign in -->
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button_red"
+        android:paddingHorizontal="32dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!-- Botão Sign up -->
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button_red"
+        android:paddingHorizontal="32dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!-- Texto de login social -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/sign_in_social"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <!-- Ícones de redes sociais -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonFacebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc_facebook"
+            android:src="@android:drawable/ic_menu_share" />
+
+        <ImageButton
+            android:id="@+id/buttonTwitter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc_twitter"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <ImageButton
+            android:id="@+id/buttonLinkedIn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc_linkedin"
+            android:src="@android:drawable/ic_menu_myplaces" />
+    </LinearLayout>
+
+</LinearLayout>

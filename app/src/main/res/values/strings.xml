@@ -1,0 +1,124 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Corex Security</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome">Bem-vindo</string>
+    <string name="welcome_description">Bem-vindo ao sistema de controle de veículos. Gerencie entradas e saídas de forma simples e eficiente.</string>
+    <string name="company_name">COREX SECURITY</string>
+    <string name="company_slogan">CONTROLE INTELIGENTE</string>
+
+    <!-- Authentication -->
+    <string name="sign_in">Entrar</string>
+    <string name="sign_up">Cadastrar</string>
+    <string name="sign_in_social">Entrar com Redes Sociais</string>
+    <string name="remember_password">Lembrar senha</string>
+    <string name="terms_conditions">Aceito os termos e condições</string>
+    <string name="already_have_account">Já tem uma conta?</string>
+    <string name="dont_have_account">Não tem conta?</string>
+    <string name="back">Voltar</string>
+
+    <!-- Login / Signup Fields -->
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="user_name">Nome de usuário</string>
+
+    <!-- Validation Messages -->
+    <string name="invalid_email">E-mail inválido</string>
+    <string name="password_min_length">A senha deve ter pelo menos 6 caracteres</string>
+    <string name="field_required">Campo obrigatório</string>
+    <string name="accept_terms">Você deve aceitar os termos</string>
+    <string name="login_success">Login realizado com sucesso!</string>
+    <string name="signup_success">Cadastro realizado com sucesso!</string>
+
+    <!-- Vehicle Verification Results -->
+    <string name="vehicle_registered_yes">Veículo já cadastrado no sistema</string>
+    <string name="vehicle_registered_no">Nenhum veículo encontrado, cadastre um novo</string>
+
+    <!-- Check Vehicle Screen -->
+    <string name="check_vehicle_header">Verificar Veículo</string>
+    <string name="check_vehicle_card_title">Consulta de Veículo</string>
+    <string name="label_first_name">Nome</string>
+    <string name="hint_first_name">Digite o nome</string>
+    <string name="label_cpf">CPF</string>
+    <string name="hint_cpf">Digite o CPF</string>
+    <string name="label_license_plate">Placa</string>
+    <string name="hint_license_plate">Digite a placa</string>
+    <string name="btn_check_vehicle">Verificar</string>
+    <string name="btn_register_new_vehicle">Cadastrar novo veículo</string>
+
+    <!-- Menu -->
+    <string name="header_title">Sistema de Veículos</string>
+    <string name="welcome_user">Olá, admin</string>
+    <string name="card_verificar_registrar_title">Verificar/Registrar</string>
+    <string name="card_verificar_registrar_desc">Verifique se o veículo já está cadastrado ou registre um novo</string>
+    <string name="card_editar_title">Editar Registros</string>
+    <string name="card_editar_desc">Gerencie, edite ou exclua registros existentes</string>
+
+    <!-- Icon Descriptions -->
+    <string name="back_icon_desc">Voltar</string>
+    <string name="logout_icon_desc">Logout</string>
+    <string name="card_verificar_registrar_icon_desc">Verificar/Registrar</string>
+    <string name="card_editar_icon_desc">Editar</string>
+
+    <!-- Filters -->
+    <string name="filter_all">Todos</string>
+    <string name="filter_plate">Placa</string>
+    <string name="filter_name">Nome</string>
+    <string name="filter_reason">Motivo</string>
+    <string name="filter_date_time">Data/Hora</string>
+    <string name="filter_date_time_tooltip">Filtrar por data e hora</string>
+
+    <!-- Social Media -->
+    <string name="desc_facebook">Login com Facebook</string>
+    <string name="desc_twitter">Login com Twitter</string>
+    <string name="desc_linkedin">Login com LinkedIn</string>
+
+    <!-- Vehicle Management -->
+    <string name="manage_records_header">Gerenciar Registros</string>
+    <string name="manage_records_desc">Buscar, editar ou excluir registros</string>
+    <string name="search_label">Buscar</string>
+    <string name="search_hint">Digite o nome ou placa</string>
+
+    <!-- Vehicle Fields -->
+    <string name="label_motivo">Motivo</string>
+    <string name="label_nome_completo">Nome Completo</string>
+    <string name="label_placa_carro">Placa do Carro</string>
+    <string name="label_modelo_cor">Modelo / Cor</string>
+    <string name="label_data">Data</string>
+    <string name="label_horario_entrada">Horário Entrada</string>
+    <string name="label_horario_saida">Horário Saída (opcional)</string>
+    <string name="label_observacao">Observação</string>
+
+    <!-- Hints -->
+    <string name="hint_motivo">Digite o motivo</string>
+    <string name="hint_nome_completo">Digite o nome completo</string>
+    <string name="hint_placa_carro">Digite a placa do carro</string>
+    <string name="hint_modelo_cor">Digite o modelo e cor</string>
+    <string name="hint_data">DD/MM/AAAA</string>
+    <string name="hint_horario_entrada">HH:mm</string>
+    <string name="hint_horario_saida">HH:mm</string>
+    <string name="hint_observacao">Adicione observações aqui</string>
+
+    <!-- Registration -->
+    <string name="phone">Telefone</string>
+
+    <!-- Vehicle List -->
+    <string name="no_results">Nenhum resultado encontrado</string>
+
+    <!-- Vehicle Item Actions -->
+    <string name="ver_detalhes">Ver detalhes</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="fill_cpf_plate">Preencha CPF e placa</string>
+    <string name="fill_name_plate">Nome e Placa são obrigatórios.</string>
+    <string name="vehicle_registered_success">Veículo registrado com sucesso!</string>
+    <string name="motivo_funcionario">Funcionário</string>
+    <string name="motivo_visita">Visita</string>
+    <string name="motivo_usuario">Usuário</string>
+    <string name="nome_visitante">Nome do Visitante</string>
+    <string name="placa_veiculo">Placa: AAA-1234</string>
+    <string name="cpf_veiculo">CPF: 000.000.000-00</string>
+
+
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Paleta principal -->
+    <color name="primaryRed">#DC143C</color>
+    <color name="primaryRedDark">#B91C3C</color>
+    <color name="primaryBlue">#3B82F6</color>
+    <color name="primaryGreen">#16A34A</color>
+    <color name="primaryPurple">#7B1FA2</color>
+    <color name="primaryPurpleDark">#4A0072</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Texto -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+
+    <!-- Cards -->
+    <color name="cardBackground">#F8FAFC</color>
+    <color name="cardShadow">#E2E8F0</color>
+
+    <!-- Estados -->
+    <color name="success">#388E3C</color>
+    <color name="error">#D32F2F</color>
+    <color name="warning">#FFA000</color>
+
+    <!-- Compatibilidade (nomes antigos) -->
+    <color name="primaryColor">#DC143C</color>
+    <color name="primaryDark">#B91C3C</color>
+    <color name="accentColor">#2E1065</color>
+
+    <!-- Selector -->
+    <color name="chip_selector">#E0E0E0</color>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aplicativo_text_10">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarroGaragem"
+        tools:targetApi="31">
+
+        <!-- Activity Inicial -->
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activities de login/cadastro -->
+        <activity
+            android:name=".ui.SignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Login" />
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Login" />
+
+        <!-- Activity principal (menu) -->
+        <activity
+            android:name=".ui.MenuActivity"
+            android:exported="false" />
+
+        <!-- Activities chamadas pelo Menu -->
+        <activity
+            android:name=".ui.CheckVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.VehicleListActivity"
+            android:exported="false" />
+
+        <!-- Activity de cadastro de veículo -->
+        <activity
+            android:name=".ui.AddEntryActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

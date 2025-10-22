@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base do aplicativo -->
+    <style name="Base.Theme.Aplicativo_text_10" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryRed</item>
+        <item name="colorPrimaryVariant">@color/primaryRedDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primaryBlue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar transparente -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Tema padrão do aplicativo -->
+    <style name="Theme.Aplicativo_text_10" parent="Base.Theme.Aplicativo_text_10" />
+
+    <!-- Alias para compatibilidade com Manifest antigo -->
+    <style name="Theme.CarroGaragem" parent="Theme.Aplicativo_text_10" />
+
+    <!-- Tema específico para telas de login/cadastro -->
+    <style name="Theme.Login" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+    </style>
+
+</resources>

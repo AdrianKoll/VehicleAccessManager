@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Tema noturno -->
+    <style name="Theme.Aplicativo_text_10" parent="Base.Theme.Aplicativo_text_10">
+        <!-- No modo escuro, ícones da status bar ficam claros -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Alias para compatibilidade -->
+    <style name="Theme.CarroGaragem" parent="Theme.Aplicativo_text_10" />
+
+    <!-- Tema noturno para login -->
+    <style name="Theme.Login" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+    </style>
+</resources>
